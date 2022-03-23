@@ -132,6 +132,7 @@ body{
     -webkit-box-shadow: -6px 23px 25px -18px var(--dark-blue);
     -moz-box-shadow: -6px 23px 25px -18px var(--dark-blue);
     box-shadow: -6px 23px 25px -18px var(--dark-blue);
+    font-size: 16px;
 }
 
 .button:hover{
@@ -146,7 +147,7 @@ body{
     color: var(--desaturated-blue);
     font-family: var(--f-family);
     font-weight: 700;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .link:hover{
