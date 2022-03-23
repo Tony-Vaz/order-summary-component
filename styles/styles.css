@@ -9,3 +9,150 @@
     --f-family: 'Overpass', sans-serif;
     --f-size: 16px;                               
 }
+
+*,*::after,*::before,html{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: var(--pale-blue);
+    font-family: var(--f-family);
+}
+
+
+.small-marging{
+    margin-bottom: 4px;
+}
+
+.medium-marging{
+    margin-bottom: 16px;
+}
+
+.large-marging{
+    margin-bottom: 32px;
+}
+
+.background{
+    background-image: url(../images/pattern-background-desktop.svg);
+    width: 100%;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    fill: var(--very-pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 25%;
+    height: auto;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+
+.card__body{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.card__body__title{
+    text-align: center;
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.card__body__paragraph{
+    font-size: var(--f-size);
+    color: var(--desaturated-blue);
+    text-align: center;
+    font-weight: 400;
+}
+
+.plan{
+    display: flex;
+    background-color: var(--very-pale-blue);
+    border-radius: 16px;
+    height: 75px;
+    align-items: center;
+    font-size: var(--f-size);
+    width: 100%;
+    justify-content: space-around;
+}
+
+.plan__flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan__description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+
+.plan__title{
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.plan__paragraph{
+    font-size: 13px;
+    color: var(--desaturated-blue);
+}
+
+.plan__link{
+    font-weight: 700;
+    color: var(--brigth-blue);
+    font-size: 13px;
+}
+
+.plan__link:hover{
+    color: hsla(245, 75%, 52%, 80%);
+    text-decoration: none;
+}
+
+.button{
+    width: 100%;
+    height: 40px;
+    background-color: var(--brigth-blue);
+    border-radius: 8px;
+    border: none;
+    font-family: var(--f-family);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    -webkit-box-shadow: -6px 23px 25px -18px var(--dark-blue);
+    -moz-box-shadow: -6px 23px 25px -18px var(--dark-blue);
+    box-shadow: -6px 23px 25px -18px var(--dark-blue);
+}
+
+.button:hover{
+    background-color: hsla(245, 75%, 52%, 80%)
+}
+
+.link{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    font-family: var(--f-family);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.link:hover{
+    color: var(--dark-blue);
+}
+
+.attribution{
+    text-align: center;
+}
